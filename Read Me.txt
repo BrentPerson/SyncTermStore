@@ -1,3 +1,6 @@
+Special Thanks/Credit to Brian Laws @ Summit 7 Systems for already putting in the hard work in creating the helper scripts: CSOMHelper.ps1, PSJobHelper.ps1, SecureStoreServiceHelper.ps1
+https://info.summit7systems.com/blog/author/brian-laws
+
 Prerequisites:
 	• Account running the scripts must be term store administrator in both source and destination Term stores
 	• In the three main sync scripts AllTermSetsAtOnce.PS1, SyncSpecificRootTerm.PS1, SyncSpecificTermSet.PS1 we are dot sourcing the helper scripts so they all must be in the same directory
