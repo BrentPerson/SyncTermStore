@@ -1,21 +1,20 @@
-# SyncTermStore
-scripts used to sync your Term Store to SharePoint Online or On-Premises
-
-
-<#
-    .Synopsis        
+.Synopsis        
         Script to migrate an OnPrem term store to SharePoint Online
         This Script Assumes you've installed SharePoint in the default location
-        This Script currently does not support multilingual termstores
         This Script currently does not support user mapping to SPO user
-        This Script currently only supports a single TermStore associated with the OnPrem/Source web application and it must be the default TermStore
+        This Script currently only supports a single TermStore associated with the OnPrem web application and it must be the default TermStore
+        
+        **Change the location of the sharepoint client .dll files to fit your environment**
 
-        .Example:
-        	.\MigrateOnPremTermStoreToSPO.ps1 -SrcSiteUrl https://www.contoso.com -SrcUsername contoso\admin -SrcPassword P@ssword -SPOSiteUrl https://contoso.sharepoint.com -SPOUsername admin@Contoso.onmicrosoft.com -SPOPassword P@ssword
-	
-	.Notes
-        	Name: MigrateOnPremTermStoreToSPO.ps1
-        	Sources: 
-        	Author: Brent Person, Microsoft, brpers@microsoft.com
-        	Last Edit: 07/10/2020
-#>
+    .Prerequisites
+       SharePoint Online Client SDK version 16.0.7018.1200 or higher
+       TermStore Administrator Rights
+    
+    .Example
+        '.\MigrateOnPremTermStoreToSPO.ps1' -SrcSiteUrl https://www.contoso.com -SrcUsername contoso\admin -SrcPassword **** -SPOSiteUrl https://contoso.sharepoint.com -SPOUsername Admin@contoso.onmicrosoft.com -SPOPassword **** -GroupList ("Group1","Group2","Group3","Group4")
+    
+    .Notes
+        Name: MigrateOnPremTermStoreToSPO.ps1
+        Author: Brent Person, Microsoft, brpers@microsoft.com
+        Created: 7/10/2020
+        Last Edit: 07/22/2020
