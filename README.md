@@ -26,6 +26,7 @@ Script: MigrateOnPremTermStoreToSPO.ps1
 
     .Prerequisites
        SharePoint Online Client SDK version 16.0.7018.1200 or higher
+       PowerShell Version 5.1.14393.3471 or higher
        TermStore Administrator Rights
     
     .Example
