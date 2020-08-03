@@ -15,7 +15,7 @@ Script: DocumentPinnedReusedTerms.ps1
 
 
 Script: MigrateOnPremTermStoreToSPO.ps1
-** 
+
     .Synopsis        
         Script to migrate an OnPrem term store to SharePoint Online
         This Script Assumes you've installed SharePoint in the default location
