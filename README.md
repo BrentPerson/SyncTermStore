@@ -18,7 +18,7 @@ Script: MigrateOnPremTermStoreToSPO.ps1
 
     .Synopsis        
         Script to migrate an OnPrem term store to SharePoint Online
-        This Script Assumes you've installed SharePoint in the default location
+        This Script Assumes you've installed SharePoint in the default location and running on 2016 or 2019
         This Script currently does not support user mapping to SPO user
         This Script currently only supports a single TermStore associated with the OnPrem web application and it must be the default TermStore
         
